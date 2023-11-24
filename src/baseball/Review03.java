@@ -1,43 +1,51 @@
-
+package baseball;
 public class Review03 {
 
 	public static void main(String[] args) {
 		// チームデータ
-		BaseBallTeam emp01 = new BaseBallTeam();
-		emp01.name = "東京ヤクルトスワローズ";
-		emp01.win  = "80";
-		emp01.lose = "59";
-		emp01.drow = "4";
+		BaseBallTeam swallows = new BaseBallTeam();
+		swallows.setName ("東京ヤクルトスワローズ")  ;
+		swallows.setWin  (80);
+		swallows.setLose (59);
+		swallows.setDraw (4);
+		swallows.report();
 
-		BaseBallTeam emp02 = new BaseBallTeam();
-		emp02.name = "横浜DeNAベイスターズ";
-		emp02.win  = "73";
-		emp02.lose = "68";
-		emp02.drow = "2";
+		BaseBallTeam baystars = new BaseBallTeam();
+		baystars.setName ("横浜DeNAベイスターズ");
+		baystars.setWin  (73);
+		baystars.setLose (68);
+		baystars.setDraw (2);
+		baystars.report();
 
-		BaseBallTeam emp03 = new BaseBallTeam();
-		emp03.name = "阪神タイガース";
-		emp03.win  = "68";
-		emp03.lose = "71";
-		emp03.drow = "4";
+		BaseBallTeam tigers = new BaseBallTeam();
+        tigers.setName ("阪神タイガース");
+        tigers.setWin  (68);
+        tigers.setLose (71);
+        tigers.setDraw (4);
+        tigers.report();
 
-		BaseBallTeam emp04 = new BaseBallTeam();
-		emp04.name = "読売ジャイアンツ";
-		emp04.win  = "68";
-		emp04.lose = "72";
-		emp04.drow = "3";
+		BaseBallTeam giants = new BaseBallTeam();
+		giants.setName ("読売ジャイアンツ");
+		giants.setWin  (68);
+		giants.setLose (72);
+		giants.setDraw (3);
+		giants.report();
 
-		BaseBallTeam emp05 = new BaseBallTeam();
-		emp05.name = "広島東洋カープ";
-		emp05.win  = "66";
-		emp05.lose = "74";
-		emp05.drow = "3";
+		BaseBallTeam carp = new BaseBallTeam();
+		carp.setName ("広島東洋カープ");
+		carp.setWin  (66);
+		carp.setLose (74);
+		carp.setDraw (3);
+		carp.report();
 
-		BaseBallTeam emp06 = new BaseBallTeam();
-		emp06.name = "中日ドラゴンズ";
-		emp06.win  = "66";
-		emp06.lose = "75";
-		emp06.drow = "2";
+		BaseBallTeam dragons = new BaseBallTeam();
+		dragons.setName ("中日ドラゴンズ");
+		dragons.setWin  (66);
+		dragons.setLose (75);
+		dragons.setDraw (2);
+		dragons.report();
+
+
 	}
 
 }
